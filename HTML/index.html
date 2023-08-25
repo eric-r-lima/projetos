@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <title>..:: Desafio HTML - Éric Lima::.. </title>
+  </head>
+
+  <body bgcolor="black">
+<table border="0" width="100%" cellspacing="0" cellpadding="15">
+ <tr bgcolor="#DCDCDC"><td>	
+    <h1><b>Conhecendo o <mark><abbr title="HiperText Markup Language">HTML</abbr></mark></b></h1>
+	<br>
+    <h2><font color="#4169E1">O que é  HTML </font></h2>
+    <p align="justify">
+      O  HTML  existe desde 1991 e atualmente está na versão 5, que veio
+      recheada
+      de recursos e funcionalidades que trazem melhorias para o desenvolvimento
+      web, sua responsabilidade principal é demarcar a estrutura de uma página
+      da web. Essa estrutura do  HTML  é formada por um conjunto de elementos, ou
+      seja, os hipertextos, que se conectam entre si formando a página. Os
+      elementos  HTML ou também chamados de tags  HTML , são utilizados para
+      informar ao navegador que tipo de estrutura é essa que está sendo
+      construída, podendo ser títulos, parágrafos, imagens, links, entre outros.
+    </p>
+    <h2><font color="#4169E1">O que são TAG?</font></h2>
+    <p align="justify">
+      As tags são formadas por uma estrutura própria, iniciam com o sinal
+      <em>“menor que”</em> , em seguida vem o nome daquele elemento e por fim, o
+      sinal <em>“maior que</em>”. Podem ser dispostas em tags que precisam de
+      fechamento e tags que fecham sozinhas (self-closing). O fechamento de uma
+      tag será definido com uma barra (/), sendo que no caso das tags de auto
+      fechamento, não há necessidade da presença desse caractere.
+    </p></td><tr></table>
+    <hr />
+<table border="0" width="100%" cellspacing="0" cellpadding="15">
+ <tr bgcolor="#191970"><td>
+    <h3><font color="white">Principais tags</font></h3>
+    <h5 id="indice"><font color="white">ÍNDICE:</font></h5>
+    <ol>
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr bgcolor="#4169E1">
+        <th width="150" align="left"><li style="color:white;"><code><a href="#html"><font color="white">Html</font></a></code></li></th>
+        <th width="150" align="left"><li style="color:white;"><code><a href="#h2"><font color="white">H2</font></a></code></li></th>
+        <th width="150" align="left"> <li style="color:white;"><code><a href="#i"><font color="white">i</font></a></code></li></th>
+        <th width="150" align="left"><li style="color:white;"><code><a href="#hr"><font color="white">hr</font></a></code></li></th>
+    </tr>
+    <tr bgcolor="#1E90FF">
+        <td><li style="color:white;"><code><a href="#body"><font color="white">Body</font></a></code> </li> </td>
+        <td><li style="color:white;"> <code><a href="#h3"><font color="white">H3</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#u"><font color="white">u</font></a></code></li></td>
+        <td>  <li style="color:white;"><code><a href="#sub"><font color="white">Sub</font></a></code></li></td>
+    </tr>
+    <tr bgcolor="#00BFFF">
+        <td><li style="color:white;"><code><a href="#head"><font color="white">Head</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#h4"><font color="white">H4</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#strong"><font color="white">Strong</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#sup"><font color="white">Sup</font></a></code></li></td>
+    </tr>
+    <tr bgcolor="#87CEFA">
+        <td><li style="color:white;"><code><a href="#title"><font color="white">Title</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#h5"><font color="white">H5</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#ol"><font color="white">ol</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#blockquote"><font color="white">Blockquote</font></a></code></li></td>
+    </tr>
+    <tr bgcolor="#87CEEB">
+        <td><li style="color:white;"><code><a href="#meta"><font color="white">Meta</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#h6"><font color="white">H6</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#ul"><font color="white">ul</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#del"><font color="white">del</font></a></code></li></td>
+    </tr>
+    <tr bgcolor="#ADD8E6">
+        <td><li style="color:white;"><code><a href="#p"><font color="white">p</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#mark"><font color="white">Mark</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#li"><font color="white">li</font></a></code></li></td>
+        <td> <li style="color:white;"><code><a href="#abbr"><font color="white">abbr</font></a></code></li></td>
+    </tr>
+    <tr bgcolor="#B0C4DE">
+        <td><li style="color:white;"><code><a href="#h1"><font color="white">H1</font></a></code></li></td>
+        <td><li style="color:white;"><code><a href="#small"><font color="white">Small</font></a></code></li></td>
+        <td> <li style="color:white;"><code><a href="#a"><font color="white">a</font></a></code></li></td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+    </ol></td></tr></table>
+<hr>
+ <table border="0" width="100%" cellspacing="0" cellpadding="15">
+ <tr bgcolor="#8B008B"><td>
+    <details>
+      <summary id="html">
+        <code><strong><font color="white">HTML</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir um documento <abbr title="HiperText Markup Language">HTML</abbr>.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>Está é a tag raiz da estrutura do documento.</code></p>
+        </li>
+        <li style="color:white;">
+          <p>
+            <code>
+              Com exceção do DOCTYPE todas as tags são filhas ou descendentes da
+              tag
+              <strong>html</strong>
+            </code>
+          </p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="body">
+        <code><strong><font color="white">BODY</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir o corpo do documento.</code></p>
+        </li>
+        <li style="color:white;">
+          <p>
+            <code>Todo conteúdo da página deve estar dentro da tag
+              <strong>body</strong>.</code>
+          </p>
+        </li>
+        <li style="color:white;">
+          <p>
+            <code>HTML5 Todos atributos de layout foram removidos no
+              <strong>HTML5</strong>.
+            </code>
+          </p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="head">
+        <code><strong><font color="white">HEAD</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p>
+            <code>Tag usada para definir o cabeçalho do documento <abbr
+                title="HiperText Markup Language">HTML</abbr>.</code>
+          </p>
+        </li>
+        <li style="color:white;">
+          <p>
+            <code>Esta tag serve como contêiner para as tags de cabeçalho.</code>
+          </p>
+        </li>
+        <li style="color:white;">
+          <p>
+            <code>
+              Dentro desta tag pode ser incluído o
+              <strong>título do documento, estilos, scripts, meta informações e
+                etc.</strong>
+            </code>
+          </p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="title">
+        <code><strong><font color="white">TITLE</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir o título do documento <abbr
+                title="HiperText Markup Language">HTML</abbr>.</code></p>
+        </li>
+        <li style="color:white;">
+          <p>
+            <code>Esta tag deve ser usada dentro da tag head.</code>
+          </p>
+        </li>
+        <li style="color:white;">
+          <p>
+            <code>O título da página normalmente é visto na aba do navegador.</code>
+          </p>
+        </li>
+        <li style="color:white;">
+          <p>
+            <code>O título também é apresentado quando o usuário adiciona a página nos favoritos.</code>
+          </p>
+        </li>
+        <li style="color:white;">
+          <p>
+            <code>O título é importante para mecanismos de pesquisas.</code>
+          </p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="meta">
+        <code><strong><font color="white">META</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir um metadado da página.</code></p>
+        </li>
+        <li style="color:white;">
+          <p>
+            <code>Os metadados são usados pelos navegadores, mecanismos de pesquisa e outros serviços da web.</code>
+          </p>
+        </li>
+        <li style="color:white;">
+          <p>
+            <code>
+              Os metadados devem ficar dentro da tag
+              <strong>head</strong>.
+            </code>
+          </p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="p">
+        <code><strong><font color="white">P</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir um parágrafo.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="h1">
+        <code><strong><font color="white">H1</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir o primeiro cabeçalho mais importante da página.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="h2">
+        <code><strong><font color="white">H2</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir o segundo cabeçalho mais importante da página.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="h3">
+        <code><strong><font color="white">H3</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir o terceiro cabeçalho mais importante da página.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="h4">
+        <code><strong><font color="white">H4</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir o quarto cabeçalho mais importante da página.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="h5">
+        <code><strong><font color="white">H5</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir o quinto cabeçalho mais importante da página.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="H6">
+        <code><strong><font color="white">H6</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir o sexto cabeçalho mais importante da página.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="mark">
+        <code><strong><font color="white">MARK</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir um texto marcado.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>Use a tag <strong>mark</strong> para destacar partes do texto.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="small">
+        <code><strong><font color="white">SMALL</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir um texto pequeno.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="i">
+        <code><strong><font color="white">I</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir parte de um texto em uma voz ou humor diferente.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>O conteúdo é exibido em itálico.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>A tag pode indicar um termo técnico, uma frase em outro idioma ou um pensamento.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>Antes de usar esta tag deve considerar o uso das tags <strong>em</strong>,
+              <strong>strong</strong>, <strong>mark</strong>, <strong>cite</strong> ou <strong>dfn</strong>.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="u">
+        <code><strong><font color="white">U</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir parte de um texto sublinhado.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>Usado normalmente para mostrar que uma palavra está com erro de ortografia.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>Evite usar esta tag caso confunda o usuário com um hyperlink.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="strong">
+        <code><strong><font color="white">STRONG</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir um texto importante.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="ol">
+        <code><strong><font color="white">OL</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir uma lista ordenada.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>A ordem da lista pode ser numérica ou alfabética.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="ul">
+        <code><strong><font color="white">UL</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir uma lista não ordenada.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="li">
+        <code><strong><font color="white">LI</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir uma lista.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="a">
+        <code><strong><font color="white">A</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para criar hyperlink e vincular uma página <abbr
+                title="HiperText Markup Language">HTML</abbr> com outra.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>O atributo mais usado é o href.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>Por padrão o conteúdo da tag é mostrado sublinhado.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="hr">
+        <code><strong><font color="white">HR</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir uma quebra temática na página.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>Esta tag é normalmente usada para separar o conteúdo.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="sub">
+        <code><strong><font color="white">SUB</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir um texto subscrito.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>Normalmente usado para fórmulas químicas.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="sup">
+        <code><strong><font color="white">SUP</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir um texto sobrescrito.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>Normalmente usado para notas de rodapé.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="blockquote">
+        <code><strong><font color="white">BLOCKQUOTE</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir um texto sobrescrito.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>Normalmente usado para notas de rodapé.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="del">
+        <code><strong><font color="white">DEL</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir um texto que foi excluído.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br />
+
+    <details>
+      <summary id="abbr">
+        <code><strong><font color="white">ABBR</font></strong></code>
+      </summary>
+      <ul>
+        <li style="color:white;">
+          <p><code>Tag usada para definir uma abreviação.</code></p>
+        </li>
+        <li style="color:white;">
+          <p><code>Importante para fornecer informações úteis para navegadores, sistema de tradução e mecanismos de
+              busca.</code></p>
+        </li>
+      </ul>
+      <span>
+        <small>
+          <a href="#indice"><samp><font color="white">voltar ao índice</font></samp></a>
+        </small>
+      </span>
+    </details>
+    <br /></td></tr></table>
+    <hr>
+<table border="0" width="100%" cellspacing="0" cellpadding="15">
+ <tr bgcolor="#C71585"><td>
+<br>
+    <h2><font color="#4169E1"><font color="white">Referências</font></h2>
+    <ul>
+      <li style="color:white;"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank"><font color="white">MDN WEB DOCS</font></a></li>
+      <li style="color:white;"><a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank"><font color="white">W3SCHOOLS</font></a></li>
+    </ul></td></tr></table>
+  </body>
+</html>
