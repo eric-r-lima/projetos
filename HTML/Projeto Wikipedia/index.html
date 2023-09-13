@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..:: Nova Wikipédia ::..</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+        $(".back-to-top").css("display", "none");
+        $("body").scroll(function() {
+            if($(this).scrollTop() == 0){
+                $(".back-to-top").css("display", "none");
+            } else {
+                $(".back-to-top").css("display", "block");
+                }
+        });
+        $(".back-to-top").click(function() {
+        $("html, body").animate({scrollTop: 0}, 800);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/images/WikiLogo2.png" width="200"
+                alt="Logotipo do site Wikipédia, com os dizeres: 'Wikipédia, a enciclopédia livre'." />
+            <h1>Nova Wikipédia</h1>
+        </div>
+    </header>
+
+    <div class="bar"></div>
+
+    <section class="content">
+        <nav class="sidebar"><span aria-label="Menú lateral de Categorias"></span>
+            <h2><span aria-label="Categorias">Categorias</span></h2>
+            <ul>
+                <li><a href="https://pt.wikipedia.org/wiki/Redes_neurais_biol%C3%B3gicas" target="_blank"><span
+                            aria-label="Redes Neurais Biológicas" >Redes Neurais Biológicas</span></a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_artificial" target="_blank"><span
+                            aria-label="Inteligência Artificial">Inteligência Artificial</span></a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/FAN_(rede_neural)" target="_blank"><span
+                            aria-label="FAN (Rede Neural)" target="_blank">FAN (Rede Neural)</span></a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Neuroci%C3%AAncia_computacional" target="_blank"><span
+                            aria-label="Neurociência Computacional" >Neurociência Computacional</span></a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_bioinspirada" target="_blank"><span
+                            aria-label="Computação Bioinspirada">Computação Bioinspirada</span></a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <article align="center" role="article">
+                <header>
+                    <h2 class="Título">
+                        <span aria-label="Título do artigo:">
+                            <a id="RedeNeural">Rede Neural Artificial</a>
+                        </span>
+                    </h2>
+                    <figure>
+                        <img src="./assets/images/neural.png"
+                            alt="Imagem com oito bolas coloridas interligadas por uma linha formando uma diagrama de rede neural">
+                        <figcaption>Imagem apresentando um diagrama simplificado de uma rede neural.
+                        </figcaption>
+                    </figure>
+                </header>
+                <article aria-readonly="true">
+                    <p>Em ciência da computação e campos relacionados, redes neurais artificiais ou redes neuronais artificiais (RNAs) são modelos computacionais inspirados pelo sistema nervoso central de um animal (em particular o cérebro) que são capazes de realizar o aprendizado de máquina bem como o reconhecimento de padrões. Redes neurais artificiais geralmente são apresentadas como sistemas de "neurônios interconectados, que podem computar valores de entradas", simulando o comportamento de redes neurais biológicas.
+                    </p>
+                    <p>Por exemplo, uma rede neural para o reconhecimento de escrita manual é definida por um conjunto de neurônios de entrada que podem ser ativados pelos pixels de uma imagem de entrada. Os dados adquiridos por essa ativação dos neurônios são então repassados, ponderados e transformados por uma função determinada pelo designer da rede, a outros neurônios. Este processo é repetido até que, finalmente, um neurônio de saída é ativado. Isso determina que caractere foi lido.
+                    </p>
+                    <p>Assim como outros métodos de aprendizado de máquina, sistemas que aprendem a partir dos dados, redes neurais têm sido usadas para resolver uma grande variedade de tarefas que são difíceis de resolver utilizando programação baseada em regras comuns, incluindo visão computacional e reconhecimento de voz.
+                    </p>
+                    <br aria-hidden="true">
+                    <h2 class="subtitulos"><a id="exemplos">Exemplos</a></h2>
+                    <hr aria-hidden="true">
+                    <p>A inspiração original para essa técnica advém do exame das estruturas do cérebro, em particular do exame de neurônios. A propriedade mais importante das redes neurais é a habilidade de interagir com seu ambiente em busca de reconhecer padrões que podem solucionar problemas dos mais fáceis aos mais complexos consequentemente melhorando seu desempenho. Isso é feito através de um processo iterativo de ajustes aplicado aos seus pesos, o treino.</p>
+                    <p>A aprendizagem ocorre quando a rede neural atinge uma solução generalizada para uma classe de problemas.</p>
+                    <p>Denomina-se algoritmo de aprendizagem a um conjunto de regras bem definidas para a solução de um problema de aprendizagem. Outro fator importante é a maneira pela qual uma rede neural se relaciona com o ambiente. Nesse contexto existem os seguintes paradigmas de aprendizagem:<p>
+                    <p>Aprendizagem Supervisionada, quando é utilizado um agente externo que indica à rede a resposta desejada para o padrão de entrada, Aprendizagem Não Supervisionada (auto-organização), quando não existe uma agente externo indicando a resposta desejada para os padrões de entrada, e Aprendizagem por Reforço, quando um crítico externo avalia a resposta fornecida pela rede.</p>
+                    <br aria-hidden="true">
+                    <h2 class="subtitulos"><a id="aplicacoes">Aplicações</a></h2>
+                    <hr aria-hidden="true">
+                    <p>Reconhecimento Automático de Alvos; Reconhecimento de Caracteres; Robótica; Diagnóstico Médico; Sensoriamento Remoto; Processamento de Voz; Biometria; Análise de dados (Data Mining), incluindo para análise de imagem de sistemas quânticos. Cientistas russos substituíram especialistas em caminhada quântica por inteligência artificial, treinando a máquina para reconhecer redes e dizer se um determinado sistema trará vantagens quânticas. Isso indica as redes que são boas candidatas para a construção de um computador quântico.</p>
+                    <p>Aplicações em reconhecimento de padrões; Análise de disfluência da fala - Junto ao Departamento de Fisioterapia, Fonoaudiologia e Terapia Ocupacional da Faculdade de Medicina da USP; Tratamento corretivo do aparelho buco-maxilar - Junto ao Departamento de Informática Médica, Faculdade de Medicina da USP; Predição da Doença de Alzheimer - Junto ao Departamento de Informática Médica, Faculdade de Medicina da USP; Reconhecimento de câncer – Câncer de mamas PPEP e Disciplina e Informática Médica, Faculdade de Medicina da USP; Análise do Planejamento Urbano da Cidade de São Paulo; Aplicações em Tomada de Decisão em Engenharia de Produção; Mercado Financeiro.</p>
+                    <br aria-hidden="true">
+                    <h2 class="subtitulos"><a id="rnas">RNAs (vantagens e características)</a></h2>
+                    <hr aria-hidden="true">
+                    <p>As redes neurais artificiais (RNA) têm muitas vantagens, porque se baseiam na estrutura do sistema nervoso humano, principalmente o cérebro.</p>
+                    <p>Sua Aprendizagem: as RNAs têm a capacidade de aprender através de uma fase chamada fase de aprendizagem. Trata-se de fornecer dados como entrada RNA, por sua vez, informando qual é a saída (resposta) que é esperada.</p>
+                    <p>Auto-organização: uma RNA cria sua própria representação de informação no seu interior, descarregando ao usuário isto.</p>
+                    <p>Tolerância a falhas: Como uma RNA armazena informações de forma redundante, pode continuar a responder de uma forma aceitável, mesmo que esteja parcialmente danificada.</p>
+                    <p>Flexibilidade: Uma rede neural pode lidar com grandes mudanças na informação de entrada, tais como sinais ruidosos ou outras alterações na entrada (por exemplo, se a informação de entrada é a imagem de um objeto, a correspondente resposta mantém-se inalterada, mesmo se a imagem muda um pouco de brilho ou o objeto muda um pouco de formato).</p>
+                    <p>Real Time: A estrutura de uma RNA é paralela, de modo que se for implementado com computadores ou dispositivos eletrônicos especiais, podem obter respostas em tempo real.</p>
+                    <h3><a id="arquiteturas"></a>Arquiteturas</h3>
+                    <p>Os neurônios de uma RNAs devem estar conectados entre si, são dispostos em camadas, e os neurônios de uma mesma camada normalmente se comportam da mesma maneira. A disposição dos neurônios nas camadas e o padrão de conexão entre estas definem a arquitetura da RNA.</p>
+                    <p>As redes sem realimentação (feedforward) têm neurônios agrupados em camadas. O sinal percorre a rede em uma única direção, da entrada para a saída. Os neurônios da mesma camada não são conectados.</p>
+                    <p>Nas redes com realimentação ou recorrentes (recurrent), a saída de alguns neurônios alimentam neurônios da mesma camada (inclusive o próprio) ou de camadas anteriores. O sinal percorre a rede em duas direções, tem memória dinâmica e capacidade de representar estados em sistemas dinâmicos. Um exemplo é a rede de Hopfield.</p>
+                    <h3><a id="modelos"></a>Modelos</h3>
+                    <p>Uma típica rede neural feedforward é um conjunto de nós. Alguns desses estão na camada de entrada, alguns nós na camada de saída, e os outros estão nas camadas intermediárias/escondidos. Cada conexão entre os neurônios tem um peso numérico. Quando a rede estiver em operação, o valor será aplicado a cada nó de entrada - os valores que estão sendo alimentados por um operador humano, a partir de sensores ambientais, ou de algum programa externo. Cada nó passa então o valor dado às conexões que levam para fora dela, e em cada conexão o valor é multiplicado pelo peso associado a esse respeito. Cada nó na camada seguinte então recebe um valor que é a soma dos valores produzidos pelas conexões que levam até ele, e em cada nó um simples cálculo é realizado sobre o valor - uma função sigmóide é típica. Este processo é repetido então com os resultados sendo passados através de camadas subsequentes de nós até que os nós de saída são alcançados. Os primeiros modelos tiveram um número fixo de camadas. Mais recentemente, os algoritmos genéticos são usados para desenvolver a estrutura neural.</p>
+                    <h3><a id="calculos">Cálculos</a></h3>
+                    <p>A curva sigmóide é frequentemente utilizada como uma função de transferência, porque introduz a não-linearidade em rede cálculos da por "esmagamento" de ativação do neurônio de nível para o intervalo [0,1]. A função sigmóide tem a vantagem adicional de ter uma função extremamente simples derivado, tal como exigido para a parte traseira de propagação de erros através de uma rede neural feed-forward. Outras funções com características semelhantes podem ser utilizados, mais comumente tanh que comprime as ativações para o intervalo de [-1,1] em vez disso, ou, ocasionalmente, uma função linear por partes que pode ser encaixada a ativação, em vez de o esmagar.</p>
+                    <p>Se nenhuma não-linearidade é introduzida por esmagamento ou corte, a rede perde muito do seu poder computacional, tornando-se uma operação de multiplicação matriz simples de álgebra linear . modelos alternativos de cálculo nas redes neurais incluem modelos com alças, onde algum tipo de processo demora tempo deve ser usado, e "o vencedor leva todos os modelos", onde o neurônio com o maior valor desde o cálculo incêndios e assume um valor 1, e todos os outros neurônios tomam o valor 0.</p>
+                    <p>Normalmente, os pesos em uma rede neural são ajustados inicialmente para pequenos valores aleatórios. Isto representa a rede sem saber nada, sua saída é essencialmente uma função de reprodução aleatória de sua entrada. Como o produto processo de treinamento, os pesos de conexão são gradualmente modificados de acordo com as regras computacionais específicos para o algoritmo de aprendizagem a ser utilizado. Idealmente, os pesos eventualmente convergir para os valores que lhes permitam executar uma computação útil. Assim, pode-se dizer que a rede neural começa sabendo nada e move-se para ganhar algum conhecimento real, embora o conhecimento é sub-simbólico.</p>
+                    <h3><a id="utilidade">Utilidade</a></h3>
+                    <p>As redes neurais são particularmente úteis para lidar com delimitadas de valor real de dados , onde uma saída de valor real é desejado; desta maneira as redes neurais irão realizar a classificação por graus, e são capazes de expressar valores equivalentes a "não sabe". Se a rede neural é treinada usando a função de erro de entropia cruzada e se a saída da rede neural é sigmoidal, então as saídas serão estimativas da probabilidade posterior real de uma classe.</p>
+                    <h3><a id="aprendizado"></a>Aprendizado (ou treino)</h3>
+                    <p>O aprendizado consiste na modificação dos pesos das conexões entre os neurônios, os pesos iniciais (sinapses) são modificados de forma iterativa, por um algoritmo que segue um dos seguintes paradigmas de aprendizado:
+                    <ul>
+                        <li>Aprendizado Supervisionado: é apresentado um conjunto de treino, consistindo de entradas e correspondentes saídas desejadas.</li>
+                        <li>Aprendizado por Reforço: para cada entrada apresentada, é produzida uma indicação (reforço) sobre a adequação das saídas correspondentes produzidas pela rede.</li>
+                        <li>UAprendizado Não-supervisionado: A rede atualiza seus pesos sem o uso de pares entrada-saídas desejadas e sem indicações sobre a adequação das saídas produzidas.</li>
+                    </ul>
+                    </p>
+                    <br aria-hidden="true">
+                    <h2 class="subtitulos"><a id="neurociencia">Redes Neurais e Neurociência</a></h2>
+                    <hr aria-hidden="true">
+                    <p>Neurociência computacional é o campo preocupado com a análise teórica e a modelagem computacional do sistema nervoso biológico. Como sistemas neurais estão intimamente relacionados com processos cognitivos e comportamentais, eles também estão fortemente ligados a modelagem cognitiva e comportamental.</p>
+                    <p>O objetivo do campo é criar modelos de sistemas neurais biológicos para entender o funcionamento de sistemas biológicos reais. Para chegar a esse entendimento, neurocientistas tentam fazer uma ligação entre processos biológicos observados (dados), mecanismos biologicamente plausíveis de processamento e aprendizado neural (modelos de redes neurais biológicas) e teoria (aprendizado estatístico e teoria da informação).</p>
+                   
+                    <h3><a id="tiposmodelo">Tipos de modelos</a></h3>
+                    <p>Muitos modelos são usados neste campo, cada um definido em um nível diferente de abstração e tentando modelar diferentes aspectos de sistemas neurais. Eles vão de modelos de comportamento de curto prazo de neurônios individuais, passando por modelos de como as dinâmicas de circuitos neurais surgem de interações entre neurônios individuais, até modelos de como comportamentos podem surgir de módulos neurais abstratos que representam subsistemas completos. Estes incluem modelos de plasticidade de curto e longo prazo de sistemas neurais e sua relação com o aprendizado e a memória, de um neurônio individual até o nível de um sistema.</p>
+                    <h2 class="subtitulos"><a id="galeria"></a>Galeria</h2>
+                    <hr aria-hidden="true">
+                    <figure class="figure">
+                        <img src="./assets/images/Two_layer_ann.svg.png"
+                            alt="Imagem com seis bolas interligadas por setas formando uma rede neural de duas camadas" class="galeria">
+                        <figcaption>Rede Neural Artificial FeedForward de duas camadas.
+                        </figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="./assets/images/Artificial_neural_network.svg.png"
+                            alt="Imagem com nove bolas interligadas por setas exemplificando os componentes de uma rede neural artificial"  class="galeria">
+                        <figcaption>Exemplo dos componentes de uma Rede Neural Artificial.
+                        </figcaption>
+                    </figure>
+                    <br >
+                    <h2 class="subtitulos"><a id="tipos">Tipos de redes neurais</a></h2>
+                    <hr aria-hidden="true">
+                    <p>O exemplo mais antigo de redes neurais são as redes perceptron, com uma camada de nós de saída, conectados às entradas por conjuntos de pesos. Essa topologia pode ser considerada a forma mais simples de rede em avanço. A soma do produtos dos pesos pelas entradas é calculada por cada nó de saída e, se o valor calculado ultrapassar um certo limiar (geralmente 0), o neurônio dispara e ajusta a saída para o valor 1; se o valor calculado é menor que o limiar, a saída é ajustada para o valor -1. Neurônios com esse comportamento são chamados de neurônios de McCulloch-Pitts ou neurônios com limiar. Ao mesmo tempo, um algoritmo de aprendizado calcula a diferença entre a saída calculada e os dados de entrada e usa o valor da diferença para ajustar os pesos da rede.<p>
+                    <p>Um exemplo mais contemporâneo de redes neurais são a família de Células Neurais Artificiais Paraconsistentes - CNAP’s: CNAPba, CNAPcls, CNAPclse, CNAPp, CNAPco, CNAPd, CNAPap, CNAPa, CNAPm.</p>
+                </article>
+            </article>
+            <a href="#RedeNeural"><div class="back-to-top"></div></a>
+        </main>
+
+        <aside class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul aria-label="Palavras-chave">
+                <li><a href="#RedeNeural">Início</a></li>
+                <li><a href="#exemplos">Exemplos</a></li>
+                <li><a href="#aplicacoes">Aplicações</a></li>
+                <li><a href="#rnas">RNAs</a></li>
+                <li><a href="#arquiteturas">Arquiteturas</a></li>
+                <li><a href="#modelos">Modelos</a></li>
+                <li><a href="#calculos">Cálculos</a></li>
+                <li><a href="#utilidade">Utilidade</a></li>
+                <li><a href="#aprendizado">Aprendizado (ou treino)</a></li>
+                <li><a href="#neurociencia">Redes Neurais e Neurociência</a></li>
+                <li><a href="#tiposmodelo">Tipos de Modelos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#tipos">Tipos de redes neurais</a></li>
+            </ul>
+        </aside>
+    </section>
+
+    <footer class="footer">
+        <h4>Atenção!</h4>
+        <h5>Essa página não possui fins lucrativos nem comerciais, pois foi criada meramente para fins de estudo do HTML5, CSS e aplicação de técnicas de inclusão assistiva na web.</h5>
+        <h6>PROJETO PARA FORMAÇÃO HTML WEB DEVELOPER - DIO. ALUNO DESENVOLVEDOR: ÉRIC LIMA</h6>
+    </footer>
+</body>
+
+</html>
